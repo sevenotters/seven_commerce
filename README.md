@@ -1,21 +1,27 @@
-# SevenCommerce
+# Seven Commerce
 
-**TODO: Add description**
+E-commerce project example using Seven Otters.
 
-## Installation
+## Steps
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `seven_commerce` to your list of dependencies in `mix.exs`:
+Create a new project
 
 ```elixir
-def deps do
-  [
-    {:seven_commerce, "~> 0.1.0"}
-  ]
-end
+mix new seven_otters --sup
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/seven_commerce](https://hexdocs.pm/seven_commerce).
+Append dependency in mix.exs _(TODO: publish in Hex and modify dep)_
 
+```elixir
+  defp deps do
+    [
+      {:seven, path: "../sevenotters"}
+    ]
+  end
+```
+
+Update dependencies and compile the whole project
+
+```elixir
+mix do deps.get, deps.compile, compile
+```
