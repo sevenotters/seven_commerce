@@ -52,7 +52,7 @@ E-commerce project example using Seven Otters.
 Create a new project
 
 ```elixir
-mix new seven_otters --sup
+mix new seven_commerce --sup
 ```
 
 Append dependency in mix.exs _(TODO: publish in Hex and modify dep)_
@@ -70,3 +70,9 @@ Update dependencies and compile the whole project
 ```elixir
 mix do deps.get, deps.compile, compile
 ```
+
+Delete ``seven_commerce/lib/seven_commerce.ex``.
+Create a new folder ``seven_commerce/lib/aggregates``.
+Create a new file ``seven_commerce/lib/aggregates/user.ex``.
+
+
