@@ -28,3 +28,14 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env()}.exs"
+
+config :seven, Seven.Entities,
+  entity_app: :seven_commerce
+
+config :seven, Seven.Log, filter: [:password]
+
+config :logger, :console,
+  format: "$date-$time [$level] $message\n",
+  level: :info
+
+import_config "#{Mix.env()}.exs"

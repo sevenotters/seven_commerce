@@ -22,6 +22,8 @@ defmodule SevenCommerce.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:comeonin, "== 4.1.1"},
+      {:bcrypt_elixir, "== 1.1.1"},
       {:seven, path: "../sevenotters"}
     ]
   end
